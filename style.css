@@ -1,0 +1,43 @@
+div.contenedor{
+	margin: 5px;
+	padding: 25px;
+}
+footer{
+	text-align: right;
+}
+header{
+	text-align: center;
+	font-size: 29px;
+	font-weight: 600;
+}
+header > span{
+	font-size: 12px;
+	display: block;
+}
+header > span[data="title"]{
+	font-size: 30px;	
+}
+html{
+	background-color: #f6f9ff;
+}
+body{
+	padding: 15px;
+	border: 1px solid #eee;
+	background-color: #FFF;
+	font-family: Helvetica;
+	width: 997px;
+	margin: 15px auto;
+	min-height: 604px;
+}
+
+div#notas{
+	background-color: #f6f9fa; color: #1f1f1f; padding: 2px; text-align: center;
+}
+ul#lista-de-codigos legend{
+	font-size: 12px;
+	display: inline-block;
+}
+
+ul#lista-de-codigos > li{
+	margin-top: 10px;
+}
