@@ -1,15 +1,37 @@
+
+html{
+	background-color: #BDBDBD;
+}
+	
+	@font-face {
+	    font-family: 'Global-Font';
+	    src: url(../fonts/Lato-Regular.ttf);
+	    font-weight: 600;
+	}
+
+body{
+	font-family: 'Global-Font';
+}
 div.contenedor{
-	margin: 5px;
+	border-top: 1px solid #f6f9fa;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	padding: 25px;
 }
 footer{
+	margin: 10px;
 	text-align: right;
 }
 header{
 	text-align: center;
 	font-size: 29px;
 	font-weight: 600;
-	background-color: #eee; padding: 15px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background-color: #E0E0E0; 
+	padding: 15px;
 }
 header > span{
 	font-size: 12px;
@@ -18,14 +40,10 @@ header > span{
 header > span[data="title"]{
 	font-size: 30px;	
 }
-html{
-	background-color: #f6f9ff;
-}
 body{
 	padding: 15px;
 	border: 1px solid #eee;
 	background-color: #FFF;
-	font-family: Helvetica;
 	width: 997px;
 	margin: 15px auto;
 	min-height: 604px;
