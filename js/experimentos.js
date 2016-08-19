@@ -8,6 +8,13 @@ var data = {
 			'lenguajes':'PHP, JavaScript, HTML, CSS'
 		},
 		{
+			'nombre':'Time-Functions-in-SA-MP',
+			'descripcion':'Es un include que contiene una amplia extension de funciones nuevas para gestionar la fecha/el tiempo en SA:MpP',
+			'source':'https://github.com/iZume/Tme-Functions-in-SA-MP',
+			'demo':'http://forum.sa-mp.com/showthread.php?t=533391',
+			'lenguajes':'PAWN'
+		},
+		{
 			'nombre':'pawn-tools',
 			'descripcion':'Es una pagina que permite crear dialogos & 3DTextLabels en SA:MP (ayuda a programadores) desde una previsualizacion web que interpreta los codigos hexadecimales, saltos de linea, espacios del tab, e incluso la estructura visible de un dialogo',
 			'source':'https://github.com/iZume/pawn-tools',
