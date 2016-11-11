@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	var PosibleRock = 1478856782721; // 1478856782721
-	var PosibleSniper = PosibleRock + (40*60000); // 6:41
+	var PosibleRock = 1478866029834; // 1478856782721
+	var PosibleSniper = PosibleRock + (37*60000); // 6:41
 
 	setInterval(function(){
 		var boss = {
@@ -23,7 +23,6 @@ $(document).ready(function(){
 
 		$("#rock-time").text(r);
 		$("#sniper-time").text(p);
-
 	}, 100);
 	function BossTime(base) {
 		var now = Date.now();
