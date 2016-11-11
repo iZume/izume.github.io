@@ -1,23 +1,32 @@
-
+* {
+	padding: 0;
+	margin: 0;
+}	
 html{
-	background-color: #BDBDBD;
+	height: 100%;
 }
-	
-	@font-face {
-	    font-family: 'Global-Font';
-	    src: url(../fonts/Lato-Regular.ttf);
-	    font-weight: 600;
-	}
+@font-face {
+	font-family: 'Global-Font';
+	src: url(../fonts/Lato-Regular.ttf);
+	font-weight: 600;
+}
 
+@font-face {
+	font-family: 'Collegia';
+	src: url(../fonts/COLLEGIA.ttf);
+	font-weight: 600;
+}
 body{
 	font-family: 'Global-Font';
+	background-color: #f6f9fa;
+	min-width: 1300px;
 }
 div.contenedor{
-	border-top: 1px solid #f6f9fa;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	padding: 25px;
+	width: 997px;
+	margin: 15px auto;
+	border: 1px solid #ccc;
+	padding: 15px 50px;
+	background-color: #FFF;
 }
 footer{
 	margin: 10px;
@@ -27,11 +36,12 @@ header{
 	text-align: center;
 	font-size: 29px;
 	font-weight: 600;
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	background-color: #E0E0E0; 
 	padding: 15px;
+
+	background-color: #fff;
+	margin-top: 5px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc; 
 }
 header > span{
 	font-size: 12px;
@@ -39,14 +49,6 @@ header > span{
 }
 header > span[data="title"]{
 	font-size: 30px;	
-}
-body{
-	padding: 15px;
-	border: 1px solid #eee;
-	background-color: #FFF;
-	width: 997px;
-	margin: 15px auto;
-	min-height: 604px;
 }
 div#notas{
 	background-color: #eee; 
@@ -62,3 +64,189 @@ ul#lista-de-codigos legend{
 ul#lista-de-codigos > li{
 	margin-top: 10px;
 }
+
+
+	.toolbar{
+		border-top: 1px solid green;
+		width: 100%;
+		display: block;
+		background-color: #FFF;
+		border-bottom: 1px solid #eee;
+	}
+	.toolbar .toolbar-struct{
+		display: block;
+		text-align: right;
+	}
+	.toolbar .toolbar-struct .toolbar-item{
+		display: inline-block;
+		margin: 2px;
+	}
+	.toolbar .toolbar-struct .toolbar-item a{
+		font-size: 14px;
+		text-decoration: none;
+		color: #FFF;
+		line-height: 6px;
+		padding: 7px;
+		background-color: #1d9e74;
+		display: block;
+	}
+	.toolbar .toolbar-struct .toolbar-item a:hover{
+		background-color: #000;
+	}
+	nav.nav{
+		font-family: 'Global-Font', 'Arial', 'Helvetica';
+		display: block;
+		width: 100%;
+		background-color: #1f1f1f;
+	}
+	nav.nav .nav-struct{
+		width: 970px;
+		margin: 0 auto;
+	}
+	nav.nav .nav-struct .info{
+		text-align: center;
+		color: #FFF;
+		line-height: 42px;
+		padding: 5px;
+	}
+	nav.nav .nav-struct .info.warning{
+		background-color: orange;
+	}
+	nav.nav .nav-struct .info.danger{
+		background-color: #ff3f3f;
+	}
+	nav.nav .nav-struct .info.wait{
+		font-weight: 600;
+	}
+	nav.nav .nav-struct > div.nav-item{
+		display: inline-block;
+	}
+
+	nav.nav .nav-struct > div.nav-item.right{
+		float: right;
+	}
+
+	nav.nav .nav-struct > div.nav-item > a{
+		color: #d6d6d6;
+		text-decoration: none;
+		line-height: 42px;
+		padding: 2px 7px 2px 7px;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: block;
+	}
+	nav.nav .nav-struct > div.nav-item.network{
+		background-color: #ccc;
+	}
+	nav.nav .nav-struct > div.nav-item.network.facebook{
+		background-color: #3b5998;
+	}	
+	nav.nav .nav-struct > div.nav-item.network.facebook > a:hover{
+		background-color: red;
+	}	
+	nav.nav .nav-struct > div.nav-item.network > a{
+		color: #FFF !important;
+	}	
+	nav.nav .nav-struct > div.nav-item > a:hover{
+		background-color: #1d9e74;
+		color: #FFF;
+	}
+
+::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid #eee;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background-color: #eee;
+}
+
+
+	html{
+		background-color: #313131;
+	}
+	body{
+		background-color: transparent;
+	}
+	.images{
+		display: block;
+		background: #26374b url(http://cdn.wallpapersafari.com/4/67/CMJ68g.jpg) no-repeat center;
+		background-size: cover;
+		height: 570px;
+		overflow: hidden;
+
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+	.images-container{
+		padding: 2px;
+	}
+	.overlay {
+		background: url(../images/overlay.png);
+		height: 100%;
+	}
+	.images{
+		display: block;
+		position: relative;
+	}
+	.logo{
+		float: right;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 2.5cm;
+		margin-right: 1.5cm;
+		color: #FFF;
+		width: 620px;
+    	word-break: break-all;
+		background-color: rgba(0, 0, 0, .4231);
+		padding: 15px;
+	}
+	.logo p.eslogan{
+		float: right;
+	}
+	.logo p.textual-logo {
+		font-family: 'Collegia';
+		font-size: 90px;
+	}
+	.news {
+		background-color: rgba(0,0,0,.40);
+		width: 420px;
+		color: #FFF;
+		margin-top: 10px;
+		margin-left: 25px;	
+		padding: 15px;
+		min-height: 520px;
+	}
+	.news .news-new .new-title{
+		font-size: 20px;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+	.news .news-new .new-title a{
+		text-decoration: none;
+		color: #FFF;
+		padding: 5px;
+	}	
+	.news .news-new .new-title a:hover{
+		background-color: rgba(255, 255, 255,.15);
+	}
+	.news .footer a{
+		float: right;
+		color: #ccc;
+	}
+	.news .news-new .new-languages{
+		font-size: 12px;
+		display: inline-block;
+	}
+	.news .news-new .new-body{
+		color: #eee;
+		display: block;
+		border-top: 1px solid #eee;
+		padding: 10px 15px 10px 15px;
+	}
+	.screen{
+		background-color: #000;
+	}

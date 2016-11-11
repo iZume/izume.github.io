@@ -1,0 +1,69 @@
+	body{
+		background: #1f1f1f url(../img/bg.png) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+
+		color: #FFF;
+		font-size: 13px;
+		font-family: Arial, Helvetica;
+		text-align: center;
+		margin: 180px auto;
+	} 
+	.add{
+		margin-top: 25px;
+	}
+	a{
+		font-size: 15px;
+		color: #FFF;
+	}
+	a:hover{
+		background: green;
+		padding: 4px;
+	}
+	.logo{
+	}
+	.logo img{
+		margin: 5px;
+		width: 150px;
+	}
+	.title{
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	.ambos{
+		width: 100%;
+		display: block;
+	}
+	.boss{
+		width: 350px;
+		height: 140px;
+	}
+	.boss{
+		display: inline-block;
+		cursor: pointer;
+		
+	}
+	.boss.rock{
+		background: url(../img/rock_off.png);
+	}
+	.boss.sniper{
+		background: url(../img/sniper_off.png);
+	}
+	.boss:hover{
+		transition: background 0.1s ease-in;
+	}
+	.boss.rock:hover{
+		background: url(../img/rock.png);
+	}
+	.boss.sniper:hover{
+		background: url(../img/sniper.png);
+	}
+	.boss span{
+		background: rgba(0,0,0,.80);
+		display: block;
+
+		line-height: 20px;
+	
+	}

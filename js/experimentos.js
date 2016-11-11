@@ -33,7 +33,10 @@ var data = {
 
 $(document).ready(function() {
 	$.map(data.articulos, function(item, i ) {
-		$('#lista-de-codigos').append('<li><strong>' + item.nombre + '</strong> <legend>(' + item.lenguajes +')</legend><ul><li>' + item.descripcion + '</li><li>Source: <a target="_blank" href="' + item.source + '">' + item.source + '</a> ' + (item.demo == undefined ? '' : '(demo: <a target="_blank" href="' + item.demo + '">' + item.demo + '</a>)') + '</li></ul></li>');
+		var url = 'experiments/?articulo=' + item.nombre;
+
+		$('#lista-de-codigos').append('<div class="news-new"><div class="new-title"><a href="' + url +'">' + item.nombre + '</a> <div class="new-languages">(' + item.lenguajes +')</div></div> <div class="new-body">' + item.descripcion + '</div> </div>');
 	});
 	$('#notas').append('La lista no está del todo actualizada, pronto se agregarán los repositorios faltantes para tenerlo todo a la disposición de uno.');
+	$('#lista-de-codigos').append('<div class="footer"><a href="#">Leer mas ...</a></div>');
 });
