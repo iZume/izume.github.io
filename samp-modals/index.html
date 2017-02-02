@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SA:MP Modals</title>
+
+	<link rel="stylesheet" href="css/samp-modals.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/default.css">
+
+
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<header>
+		SA:MP Dialogs
+	</header>
+	<div class="content">
+		<div class="half right">
+			<ul class="gal">
+				<li>
+					<div>	
+						<p>DIALOG_STYLE_MSGBOX</p>
+
+						<img src="http://wiki.sa-mp.com/wroot/images2/a/a1/Dialog_style_msgbox.png" alt="">
+					</div>
+<pre><code class="js" style="text-align: left;">
+Dialog({
+	title: "Hello",
+	body: "{FFFFFF}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ea dolore quisquam. Unde dignissimos rem, voluptatum sed quaerat incidunt nesciunt similique amet, optio, ipsa dolor? Quibusdam voluptatem totam unde, minus.",
+	type: "DIALOG_STYLE_MSGBOX",
+	button: {
+		confirmButton: "Aceptar",
+		denyButton: "Cancelar"
+	},
+	responseConfirm: function() {
+		alert("Done!")
+	},
+	responseDeny: function() {
+		alert("!Response")
+	}
+})</code></pre>
+					<a class="pretty-button-z" href="#" id="DIALOG_STYLE_MSGBOX">Open</a>
+				</li>
+				<li>
+					<div>	
+						<p>DIALOG_STYLE_INPUT</p>
+
+						<img src="http://wiki.sa-mp.com/wroot/images2/d/d5/Dialog_style_input.png" alt="">
+					</div>
+<pre><code class="js" style="text-align: left;">
+Dialog({
+	title: "Hello",
+	body: "Hello, i am a box!",
+	type: "DIALOG_STYLE_INPUT",
+	button: {
+		confirmButton: "Aceptar",
+		denyButton: "Cancelar"
+	},
+	responseConfirm: function(a) {
+		alert("Usted escribio: " + (a.length > 0 ? a : "Nada!"))
+	}
+})</code></pre>
+					<a class="pretty-button-z" href="#" id="DIALOG_STYLE_INPUT">Open</a>
+				</li>
+				<li>
+					<div>	
+						<p>DIALOG_STYLE_PASSWORD</p>
+						<img src="http://wiki.sa-mp.com/wroot/images2/f/f8/Dialog_style_password.png" style="width: 500px; height: 140px;" alt="">
+					</div>
+
+<pre><code class="js" style="text-align: left;">
+Dialog({
+	title: "Hello",
+	body: "Hello, i am a box!",
+	type: "DIALOG_STYLE_PASSWORD",
+	button: {
+		confirmButton: "Aceptar",
+		denyButton: "Cancelar"
+	}
+})</code></pre>
+					<a class="pretty-button-z" href="#" id="DIALOG_STYLE_PASSWORD">Open</a>
+				</li>
+				<li>
+					<div>	
+						<p>DIALOG_STYLE_LIST</p>
+						<img src="http://wiki.sa-mp.com/wroot/images2/b/b1/Dialog_style_list.png" style="width: 370px;" alt="">
+					</div>
+<pre><code class="js" style="text-align: left;">
+Dialog({
+	title: "Hello",
+	body: ["Fagrinht", "Zume", "RioYX", "SickAttack", "GOM3Z", "DaniFox", "Glimma", "Eloy", "TheChaoz", "Colin", "OTACON", "Sweedky", "Thompson404", "Goncho28"],
+	type: "DIALOG_STYLE_LIST",
+	button: {
+		confirmButton: "Aceptar",
+		denyButton: "Cancelar"
+	},
+	responseConfirm: function(a) {
+		alert(a)
+	}
+})</code></pre>
+					<a class="pretty-button-z" href="#" id="DIALOG_STYLE_LIST">Open</a>
+				</li>
+				<li>
+					<div>	
+						<p>DIALOG_STYLE_TABLIST</p>
+						<img src="http://wiki.sa-mp.com/wroot/images2/7/75/Dialog_style_tablist.png" style="width: 370px;" alt="">
+					</div>
+<pre><code class="js" style="text-align: left;">
+Dialog({
+	title: "Hello",
+	body: [
+		["Deagle", "Pistol", "$1,000", "10"],
+		["AK-47", "Assault", "$5,000", "30"]
+	],
+	type: "DIALOG_STYLE_TABLIST",
+	button: {
+		confirmButton: "Aceptar",
+		denyButton: "Cancelar"
+	}
+})</code></pre>
+					<a class="pretty-button-z" href="#" id="DIALOG_STYLE_TABLIST">Open</a>
+				</li>
+			</ul>
+		</div>
+		<div class="half">
+	
+			<div style="text-align: center; margin-bottom: 15px;">
+				<img src="http://forum.sa-mp.com/images/samp/logo_forum.gif" alt="">
+			</div>
+
+			SA:MP Modals with dialogs functions in web version! totally in Javascript!
+
+
+			<p style="text-align: right;">
+				<a href="http://forum.sa-mp.com/member.php?u=146395" target="_blank">@Zume</a>
+			</p>
+		</div>
+	</div>
+
+	<script src="js/samp-modals.min.js"></script>
+	<script src="js/style.js"></script>
+</body>
+</html>
